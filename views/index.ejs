@@ -7,10 +7,9 @@
     <body>
         <ul class="pokemon">
             <%  pokemonArray.forEach(function(eachPokemon, index) { %>
-                    <li><%=JSON.stringify(eachPokemon)%></li>
+                    <li><a href="http://localhost:3000/pokemon/<%=index%>"><%=eachPokemon.name%></a></li>
             <% }) %>
         </ul>
            
-
     </body>
 </html>
