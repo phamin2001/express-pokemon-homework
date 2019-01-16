@@ -1,13 +1,26 @@
 body {
-    background-color: antiquewhite;
+    background-color: rgb(103, 158, 101);
 }
 
 ul {
     background: #3399ff;
     padding: 20px;
+    float: center;
   }
   
 ul li {
     background: #cce5ff;
     margin: 5px;
+}
+
+h1 {
+    color: rgb(28, 35, 134);
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
