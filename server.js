@@ -1,7 +1,10 @@
 const express  = require('express');
 const app      = express();
 const Pokemon = require('./pokemon');
+
 app.use(express.static('public'));
+
+
 
 
 // index route
