@@ -5,10 +5,24 @@
  
     </head>
     <body>
+
         <ul class="pokemon">
+
             <%  pokemonArray.forEach(function(eachPokemon, index) { %>
-                    <li><a href="http://localhost:3000/pokemon/<%=index%>"><%=eachPokemon.name%></a></li>
+                    <li>
+                    <a href="http://localhost:3000/pokemon/<%=index%>"><%=eachPokemon.name%></a>
+                    <a href="http://localhost:3000/pokemon/<%=index%>/edit"><button>Edit</button></a>
+                    <form action="/pokemon/<%=index%>?_method=DELETE" method="POST">
+                        <button type="submit">Delete</button>
+                    </form>
+                    </li>
             <% }) %>
+
+
+            <div>
+                <a href="http://localhost:3000/pokemon/new"><button type=submit>Add New Pokemon</button></a><br>
+            </div>
+
         </ul>
            
     </body>
